@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Template Name: Photomatic
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Endemicity</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../layout/styles/layout.css" type="text/css" />
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <div class="fl_left">
+      <h1><a href="../index.html">Slendemics</a></h1>
+      <p>www.slendemics.net</p>
+    </div>
+    <div id="topnav">
+      <ul>
+        <li ><a href="../index.html">Home</a></li>
+        <li ><a href="endemicity.html">Endemicity</a></li>
+        <li ><a href="sri-lanka.html">Sri Lanka</a></li>
+        <li class="active"><a href="easl.html">EASL</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="conservation.html">Conservation</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+    <div style="width: 200px; height: 75vh; background-color: #f4f4f4; padding: 10px; border-right: 1px solid #ddd; position: fixed; overflow-y: auto;">
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li style="margin-bottom: 10px;">
+            <a href="#fish" onclick="changeContent('fish')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Fish</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#amphibians" onclick="changeContent('amphibians')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Amphibians</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#reptiles" onclick="changeContent('reptiles')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Reptiles</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#birds" onclick="changeContent('birds')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Birds</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#mammals" onclick="changeContent('mammals')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Mammals</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#bees" onclick="changeContent('bees')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Bees</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#dragonflies" onclick="changeContent('dragonflies')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Dragonflies</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#termites" onclick="changeContent('termites')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Termites</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#ants" onclick="changeContent('ants')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Ants</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#butterflies" onclick="changeContent('butterflies')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Butterflies</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#ticks" onclick="changeContent('ticks')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Ticks</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#spiders" onclick="changeContent('spiders')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Spiders</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#crabs" onclick="changeContent('crabs')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Freshwater Crabs</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="#snails" onclick="changeContent('snails')" style="text-decoration: none; display: block; padding: 10px; background-color: #fff; color: #000; border: 1px solid #ddd;">Land Snails</a>
+        </li>
+    </ul>
+</div>
+
+    <div id="main-content" style="margin-left: 220px; padding: 20px;">
+        <h1>Welcome to the Page</h1>
+        <p>This is where the main content of your webpage goes.</p>
+    </div>
+
+    <script>
+        function changeContent(section) {
+    const contentDiv = document.getElementById('main-content');
+    const sections = {
+        fish: `<h1>Fish</h1><p>Explore the diverse endemic fish species found in Sri Lanka.</p>`,
+        amphibians: `<h1>Amphibians</h1><p>Learn about the unique amphibians native to Sri Lanka.</p>`,
+        reptiles: `<h1>Reptiles</h1><p>Discover the fascinating reptiles that inhabit Sri Lanka.</p>`,
+        birds: `<h1>Birds</h1><p>Find out about the vibrant bird species of Sri Lanka.</p>`,
+        mammals: `<h1>Mammals</h1><p>Learn about the endemic mammal species of Sri Lanka.</p>`,
+        bees: `<h1>Bees</h1><p>Explore the role of endemic bees in Sri Lanka's ecosystem.</p>`,
+        dragonflies: `<h1>Dragonflies</h1><p>Discover the beauty and diversity of dragonflies in Sri Lanka.</p>`,
+        termites: `<h1>Termites</h1><p>Learn about termites and their role in Sri Lanka's environment.</p>`,
+        ants: `<h1>Ants</h1><p>Find out about the fascinating ants of Sri Lanka.</p>`,
+        butterflies: `<h1>Butterflies</h1><p>Explore the vibrant butterflies native to Sri Lanka.</p>`,
+        ticks: `<h1>Ticks</h1><p>Learn about the unique ticks found in Sri Lanka.</p>`,
+        spiders: `<h1>Spiders</h1><p>Discover the diverse spider species of Sri Lanka.</p>`,
+        crabs: `<h1>Freshwater Crabs</h1><p>Explore the endemic freshwater crabs in Sri Lanka's waterways.</p>`,
+        snails: `<h1>Land Snails</h1><p>Learn about the fascinating land snails of Sri Lanka.</p>`
+    };
+
+    contentDiv.innerHTML = sections[section] || `<h1>Section Not Found</h1><p>The content for this section is not available.</p>`;
+}
+
+    </script>
+
+
+
+</body>
+</html>
