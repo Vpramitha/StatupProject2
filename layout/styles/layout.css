@@ -94,7 +94,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 .gallery ul li.last{margin-right:0;}
 .gallery ul li p{margin:0; padding:0; line-height:normal;}
 .gallery ul li p.imgtitle{margin-bottom:5px;}
-.gallery ul li p.readmore{margin-top:5px; text-align:right;}
+.gallery ul li p.readmore{margin-top:5px; text-align:center;}
 
 /* ----------------------------------------------Column------------------------------------- */
 
